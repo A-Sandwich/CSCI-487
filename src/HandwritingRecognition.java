@@ -1,3 +1,4 @@
+
 import Jama.Matrix;
 
 /**
@@ -5,6 +6,7 @@ import Jama.Matrix;
  */
 public class HandwritingRecognition {
     public static void main(String[] args) {
-        Matrix m = new Matrix(5,5,10);
+        //Matrix m = new Matrix(5,5,10);
+        Pad writingPad = new Pad(25000);
     }
 }
