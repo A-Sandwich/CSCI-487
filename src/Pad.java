@@ -6,7 +6,6 @@ import java.awt.*;
 
 
 public class Pad {
-    JComponent.PaintingCanvas
     public Pad(int num_pixels){
         int[] char_data = new int[num_pixels];
 
@@ -19,7 +18,7 @@ public class Pad {
         charCanvas.setSize(500, 500);
         Graphics paintBrush;
         //paintBrush.setColor();
-        charCanvas.paint();
+        //charCanvas.paint();
 
         //Add canvas to jframe
         mainWindow.getContentPane().add(charCanvas, BorderLayout.CENTER);
@@ -28,7 +27,7 @@ public class Pad {
         mainWindow.setVisible(true);
 
         mainWindow.add(new JComponent() {
-        })
+        });
 
     }
 }
