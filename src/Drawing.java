@@ -22,7 +22,7 @@ import java.awt.event.MouseEvent;
  * of the MouseEvent.
  *
  * The line drawwed during consecutive mouse drag events is white to
- * be distinguised from the dark gray over which it is drawwed.
+ * be distinguished from the dark gray over which it is drawwed.
  *
  * Then Drawing's inherited JPanel Graphics member is updated with the new
  * version of the Image what belongs to the Drawing object.
