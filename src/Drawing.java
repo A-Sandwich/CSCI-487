@@ -90,7 +90,7 @@ public class Drawing extends JPanel {
         int oldX;
         int oldY;
         int currentX;
-        int currenty;
+        int currentY;
         if (e.getID() != MouseEvent.MOUSE_DRAGGED) {
             return;
         }
@@ -106,22 +106,22 @@ public class Drawing extends JPanel {
         this.X = e.getX();
         this.Y = e.getY();
         currentX = oldX;
-        currenty = oldY;
+        currentY = oldY;
 
         input[this.X][this.Y] = 1;
 
-        while(X!=currentX && Y!=currenty){
-            if(X>oldX)
+        while(X!=currentX && Y!=currentY){
+            if(X > oldX)
                 currentX++;
             else if(X<oldX)
                 currentX--;
 
             if(Y>oldY)
-                currenty++;
+                currentY++;
             else if(Y< oldY)
-                currenty--;
+                currentY--;
 
-            input[currentX][currenty] = 1;
+            input[currentX][currentY] = 1;
         }
 
         if(this.X > maxX)
@@ -133,16 +133,17 @@ public class Drawing extends JPanel {
         if(this.Y < minY || minY == 0)
             minY = this.Y;
 
-        for(int i=0;i<50;i++){
-            for(int j=0;j<50;j++){
+        /*for(int i=0; i < HandwritingRecognition.DRAWINGHEIGHT ; i++){
+            for(int j=0; j < HandwritingRecognition.DRAWINGWIDTH ; j++){
                 System.out.print(input[i][j]+" ");
             }
             System.out.println();
         }
-        System.out.println();
+        System.out.println();*/
         //imageToArray();
 
         //generateNormalization();
+        System.out.println("minX, maxX; minY, maxY: " + minX + ", " + maxX + "; " + minY + ", " + maxY);
     }
 
     void generateNormalization(){
