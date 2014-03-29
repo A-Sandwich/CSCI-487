@@ -10,8 +10,8 @@ import java.awt.*;
  */
 public class HandwritingRecognition {
 
-    private static final int DRAWINGWIDTH = 500;
-    private static final int DRAWINGHEIGHT = 500;
+    public static final int DRAWINGWIDTH = 50;
+    public static final int DRAWINGHEIGHT = 50;
 
     public static void main(String[] args) {
         //Matrix m = new Matrix(5,5,10);
@@ -24,7 +24,7 @@ public class HandwritingRecognition {
 
         JLabel titleText = new JLabel();
         titleText.setText("Handwriting Recognition");
-        titleText.setPreferredSize(new Dimension(400, 25));
+        titleText.setPreferredSize(new Dimension(50, 25));
 
         mainWindow.getContentPane().add(titleText, BorderLayout.NORTH);
         mainWindow.getContentPane().add(d, BorderLayout.CENTER);
