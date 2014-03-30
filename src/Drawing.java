@@ -43,6 +43,8 @@ public class Drawing extends JPanel {
     private int[][] croppedInput;
     private int[][] normalized;
 
+    private int mouseWiggle;
+
     public Drawing() {
         enableEvents(AWTEvent.MOUSE_MOTION_EVENT_MASK | AWTEvent.MOUSE_EVENT_MASK | AWTEvent.COMPONENT_EVENT_MASK);
         // this.setSize(500, 500);
@@ -59,6 +61,9 @@ public class Drawing extends JPanel {
                 normalized[i][j] = 0;
             }
         }
+
+
+        mouseWiggle = 0;
     }
 
     private void __Image() {
@@ -92,6 +97,13 @@ public class Drawing extends JPanel {
         int currentX;
         int currentY;
         if (e.getID() != MouseEvent.MOUSE_DRAGGED) {
+            if(e.getID() == MouseEvent.MOUSE_MOVED) {
+                mouseWiggle++;
+                if(mouseWiggle > 50) {
+                    imageToArray();
+                    generateNormalization();
+                }
+            }
             return;
         }
 
@@ -132,33 +144,47 @@ public class Drawing extends JPanel {
             maxY = this.Y;
         if(this.Y < minY || minY == 0)
             minY = this.Y;
-
-        /*for(int i=0; i < HandwritingRecognition.DRAWINGHEIGHT ; i++){
+        /*
+        for(int i=0; i < HandwritingRecognition.DRAWINGHEIGHT ; i++){
             for(int j=0; j < HandwritingRecognition.DRAWINGWIDTH ; j++){
                 System.out.print(input[i][j]+" ");
             }
             System.out.println();
         }
-        System.out.println();*/
-        //imageToArray();
+        System.out.println(); */
+
 
         //generateNormalization();
-        System.out.println("minX, maxX; minY, maxY: " + minX + ", " + maxX + "; " + minY + ", " + maxY);
+
+        //System.out.println("minX, maxX; minY, maxY: " + minX + ", " + maxX + "; " + minY + ", " + maxY);
     }
 
     void generateNormalization(){
         int pixelSizeWidth = (maxX-minX)/5;
         int pixelSizeHeight = (maxY-minY)/7;
 
-        System.out.println(pixelSizeHeight);
-        System.out.println((maxY-minY));
+        //System.out.println(pixelSizeHeight);
+        //System.out.println((maxY-minY));
 
-        for(int i =0;i<7;i++){
+        /*for(int i =0;i<7;i++){
             for(int j=0; j<5; j++){
                 for(int k=(i*pixelSizeHeight);k<(i+1)*pixelSizeHeight; k++){
                     for(int l=(j*pixelSizeWidth);l<(j+1)*pixelSizeWidth;l++){
                         if(croppedInput[k][l] == 1)
                             normalized[i][j] = 1;
+                    }
+                }
+            }
+        }*/
+        normalized = new int[(maxY-minY)][(maxX - minX)];
+        for(int i = 0; i < (maxY - minY); i += pixelSizeHeight) {
+            for(int j = 0; j < (maxX - minX); j += pixelSizeWidth) {
+                for(int k = i; k < (i * pixelSizeHeight) + pixelSizeHeight; k++) {
+                    for(int l = j; l < (i * pixelSizeWidth) + pixelSizeHeight; l++) {
+                        if(croppedInput[k][l] == 1) {
+                            if (i < (maxY - minY) && j < (maxX - minX))
+                                normalized[i][j] = 1;
+                        }
                     }
                 }
             }
@@ -175,7 +201,7 @@ public class Drawing extends JPanel {
     }
 
     void imageToArray(){
-        croppedInput = new int[(maxX-minX)][(maxY-minY)];
+        croppedInput = new int[(maxX-minX)+1][(maxY-minY)+1];
 
         for(int i = minX;i<maxX;i++){
             for(int j=minY;j<maxY;j++){
@@ -183,20 +209,12 @@ public class Drawing extends JPanel {
             }
         }
 
-        for(int i=0;i<(maxX-minX);i++){
+        /*for(int i=0;i<(maxX-minX);i++){
             for(int j=0; j<(maxY-minY);j++){
                 System.out.print(croppedInput[i][j]);
             }
             System.out.println();
         }
-        System.out.println();
-    }
-
-    public void getClips(){
-        Graphics test;
-        int width = maxX - minX;
-        int height = maxY - minY;
-        graphics.setClip(minX, minY, width, height);
-
+        System.out.println();*/
     }
 }
