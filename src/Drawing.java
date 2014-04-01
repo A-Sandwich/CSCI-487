@@ -70,7 +70,7 @@ public class Drawing extends JPanel {
         this.image = createImage(getWidth(), getHeight());
         this.graphics = this.image.getGraphics();
         this.graphics.setColor(Color.DARK_GRAY);
-        this.graphics.fillRect(0,0,getWidth(), getHeight());
+        this.graphics.fillRect(0, 0, getWidth(), getHeight());
     }
 
     @Override
@@ -99,7 +99,7 @@ public class Drawing extends JPanel {
         if (e.getID() != MouseEvent.MOUSE_DRAGGED) {
             if(e.getID() == MouseEvent.MOUSE_MOVED) {
                 mouseWiggle++;
-                if(mouseWiggle > 50) {
+                if(mouseWiggle == 500) {
                     imageToArray();
                     generateNormalization();
                 }
@@ -176,14 +176,16 @@ public class Drawing extends JPanel {
                 }
             }
         }*/
-        normalized = new int[(maxY-minY)][(maxX - minX)];
-        for(int i = 0; i < (maxY - minY); i += pixelSizeHeight) {
-            for(int j = 0; j < (maxX - minX); j += pixelSizeWidth) {
-                for(int k = i; k < (i * pixelSizeHeight) + pixelSizeHeight; k++) {
-                    for(int l = j; l < (i * pixelSizeWidth) + pixelSizeHeight; l++) {
+        normalized = new int[7][5];
+        for(int i = 0; i < (maxY - minY)-pixelSizeHeight; i += pixelSizeHeight) {
+            for(int j = 0; j < (maxX - minX)-pixelSizeWidth; j += pixelSizeWidth) {
+                for(int k = i; k < i  + pixelSizeHeight; k++) {
+                    for(int l = j; l < j + pixelSizeWidth; l++) {
+                        System.out.println(croppedInput.length + ", " + croppedInput[0].length);
+                        System.out.println(i + ", " + j + ", " + k + "/" + (i + pixelSizeHeight) + ", " + l + "/" + (j + pixelSizeWidth));
                         if(croppedInput[k][l] == 1) {
-                            if (i < (maxY - minY) && j < (maxX - minX))
-                                normalized[i][j] = 1;
+                            //if (i < (maxY - minY) && j < (maxX - minX))
+                                normalized[i/pixelSizeHeight][j/pixelSizeWidth] = 1;
                         }
                     }
                 }
@@ -201,20 +203,20 @@ public class Drawing extends JPanel {
     }
 
     void imageToArray(){
-        croppedInput = new int[(maxX-minX)+1][(maxY-minY)+1];
-
-        for(int i = minX;i<maxX;i++){
-            for(int j=minY;j<maxY;j++){
-                croppedInput[i-minX][j-minY] = input[i][j];
-            }
+        croppedInput = new int[(maxY-minY)+1][(maxX-minX)+1];
+        for(int j=minY;j<=maxY;j++){
+            for(int i = minX;i<=maxX;i++){
+                croppedInput[j-minY][i-minX] = input[j][i];
+    }
         }
 
-        /*for(int i=0;i<(maxX-minX);i++){
-            for(int j=0; j<(maxY-minY);j++){
-                System.out.print(croppedInput[i][j]);
+        
+        for(int j=0; j<(maxY-minY);j++){
+            for(int i=0;i<(maxX-minX);i++){
+                System.out.print(croppedInput[j][i]);
             }
             System.out.println();
         }
-        System.out.println();*/
+        System.out.println();
     }
 }
