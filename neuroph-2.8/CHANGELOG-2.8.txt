@@ -1,0 +1,34 @@
+/////////////////////////////////////////////////
+
+  NEUROPH - JAVA NEURAL NETWORK FRAMEWORK
+  http://neuroph.sourceforge.net
+
+/////////////////////////////////////////////////
+
+
+This is the 2.8 release of the Neuroph framework
+
+This release brings some great improvements in GUI NeurophStudio, handy new features on framework level and small API changes.  
+Main changes include:
+
+1. Class DataSet moved from org.neuroph.core.learning to new package org.neuroph.core.data
+2. Added basic but extensible data set sampling
+3. Added BufferedDataset class which allowes buffered loading of data set. This is usefull for large datasets, and allows partial loading
+   of data set during the training. It can be used as regular dataset. Just note that normalization and sampling methods wont work on entire dataset,
+   just on the data currently loaded in memory. 
+4. Normalization methods are now normalizing outputs too
+5. Added new event NeuralNetworkCalculated which is fired every time when neural network event is calculated.
+6. New interface ErrorFunction which allows custom error functions for learning rules to be defined. MeanSquaredError is provided as commonly used, default.
+7. New interface StopCondition which allows custom stop criteria for stopping learning rule execution to be defined. Some coommonly used are provided
+8. A bunch os source code samples for some problems from UCI machine learning repository at org.neuroph.samples (Samples module)
+
+In NeurophStudio:
+
+10. Full featured visual editor - drag n drop components from pallete to build custom neural network, or use it to modify 
+    existing network created using wizard explore and change settings for each component
+12. 2D and 3D visualization of neural networks and data sets, see how data sets looks like and what is network doing
+13. Neuroph Studio Update Center - get the new features runing auto update!
+14. Brain Computer Interface (BCI) wizard - wizard to create neural network based barin wave recognizer/classifier
+15. BCI Tool - brain wave visualizer and EEG recorder using NeuroSky BCI 
+16. Classifier evaluation tool based on GoodOldAi Framework (test classifier based on neural network from Neuroph and compare it with others)
+
