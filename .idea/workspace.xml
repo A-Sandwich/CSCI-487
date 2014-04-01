@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e49a7a45-f6ee-49ce-9540-e1d98b583c27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSCI-487.iml" afterPath="$PROJECT_DIR$/CSCI-487.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Drawing.java" afterPath="$PROJECT_DIR$/src/Drawing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e49a7a45-f6ee-49ce-9540-e1d98b583c27" name="Default" comment="" />
     <ignored path="HandwritingRecognition.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
