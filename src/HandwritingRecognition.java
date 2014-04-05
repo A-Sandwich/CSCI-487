@@ -1,8 +1,10 @@
 
-import Jama.Matrix;
+//import Jama.Matrix;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 /**
@@ -16,7 +18,9 @@ public class HandwritingRecognition {
     public static void main(String[] args) {
         //Matrix m = new Matrix(5,5,10);
         //Pad writingPad = new Pad(25000);
-        Drawing d = new Drawing();
+        final NetOps ourNetwork = new NetOps();
+
+        final Drawing d = new Drawing();
         d.setPreferredSize(new Dimension(DRAWINGWIDTH, DRAWINGHEIGHT));
 
         JFrame mainWindow = new JFrame("Handwriting Recognition");
@@ -29,8 +33,39 @@ public class HandwritingRecognition {
         mainWindow.getContentPane().add(titleText, BorderLayout.NORTH);
         mainWindow.getContentPane().add(d, BorderLayout.CENTER);
 
+        JPanel easternSeaboard = new JPanel();
+        easternSeaboard.setLayout(new BoxLayout(easternSeaboard, BoxLayout.Y_AXIS));
+
+        final JTextField addText = new JTextField();
+        mainWindow.getContentPane().add(addText, BorderLayout.SOUTH);
+
+        JButton add = new JButton("Add");
+        add.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                ourNetwork.createDataset(d.getNormalizedArray(), addText.getText().charAt(0));
+            }
+        });
+        easternSeaboard.add(add);
+
+        JButton learn = new JButton("Learn");
+        add.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                ourNetwork.Learn();
+            }
+        });
+        easternSeaboard.add(learn);
+
+        JButton test = new JButton("Test");
+        add.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                
+            }
+        });
+        easternSeaboard.add(test);
+
+        mainWindow.getContentPane().add(easternSeaboard, BorderLayout.EAST);
         mainWindow.pack();
         mainWindow.setVisible(true);
-
     }
+
 }
