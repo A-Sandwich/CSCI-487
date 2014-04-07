@@ -164,6 +164,7 @@ public class Drawing extends JPanel {
             System.out.println();
         }
         System.out.println();
+
     }
 
     void imageToArray(){
@@ -188,5 +189,13 @@ public class Drawing extends JPanel {
         imageToArray();
         generateNormalization();
         return normalized;
+    }
+
+    public void resetDrawing(){
+        
+        minX = 0;
+        maxX = 0;
+        minY = 0;
+        maxY = 0;
     }
 }

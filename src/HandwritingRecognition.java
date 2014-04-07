@@ -36,6 +36,9 @@ public class HandwritingRecognition {
         JPanel easternSeaboard = new JPanel();
         easternSeaboard.setLayout(new BoxLayout(easternSeaboard, BoxLayout.Y_AXIS));
 
+        JPanel westernSeaboard = new JPanel();
+        westernSeaboard.setLayout(new BoxLayout(westernSeaboard, BoxLayout.Y_AXIS));
+
         final JTextField addText = new JTextField();
         mainWindow.getContentPane().add(addText, BorderLayout.SOUTH);
 
@@ -43,27 +46,45 @@ public class HandwritingRecognition {
         add.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 ourNetwork.createDataset(d.getNormalizedArray(), addText.getText().charAt(0));
+                d.resetDrawing();
             }
         });
         easternSeaboard.add(add);
 
         JButton learn = new JButton("Learn");
-        add.addActionListener(new ActionListener(){
+        learn.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                ourNetwork.Learn();
+                ourNetwork.learn();
             }
         });
         easternSeaboard.add(learn);
 
         JButton test = new JButton("Test");
-        add.addActionListener(new ActionListener() {
+        test.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                
+                ourNetwork.test(d.getNormalizedArray(), addText.getText().charAt(0));
             }
         });
         easternSeaboard.add(test);
 
+        JButton save = new JButton("Save");
+        save.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                ourNetwork.save();
+            }
+        });
+        westernSeaboard.add(save);
+
+        JButton load = new JButton("Load");
+        load.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                ourNetwork.load();
+            }
+        });
+        westernSeaboard.add(load);
+
         mainWindow.getContentPane().add(easternSeaboard, BorderLayout.EAST);
+        mainWindow.getContentPane().add(westernSeaboard, BorderLayout.WEST);
         mainWindow.pack();
         mainWindow.setVisible(true);
     }
