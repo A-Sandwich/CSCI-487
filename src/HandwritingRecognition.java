@@ -45,7 +45,8 @@ public class HandwritingRecognition {
         JButton add = new JButton("Add");
         add.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                ourNetwork.createDataset(d.getNormalizedArray(), addText.getText().charAt(0));
+                if(addText.getText() != "")
+                    ourNetwork.createDataset(d.getNormalizedArray(), addText.getText().charAt(0));
                 d.resetDrawing();
                 d.updateUI();
                 addText.setText("");

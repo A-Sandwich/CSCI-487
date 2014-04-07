@@ -5,7 +5,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/Jama-1.0.3.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Drawing.java" afterPath="$PROJECT_DIR$/src/Drawing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HandwritingRecognition.java" afterPath="$PROJECT_DIR$/src/HandwritingRecognition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NetOps.java" afterPath="$PROJECT_DIR$/src/NetOps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HandwritingRecognition.iws" />
@@ -73,11 +72,8 @@
       <file leaf-file-name="HandwritingRecognition.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="36" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.369863" vertical-offset="666" max-vertical-offset="1548">
-              <folding>
-                <element signature="e#1928#2065#0" expanded="true" />
-                <element signature="e#2054#2055#0" expanded="true" />
-              </folding>
+            <state line="48" column="20" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.53196347" vertical-offset="559" max-vertical-offset="1494">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,7 +81,7 @@
       <file leaf-file-name="Drawing.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Drawing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="18" selection-start="5838" selection-end="5838" vertical-scroll-proportion="-27.6" vertical-offset="2748" max-vertical-offset="3672">
+            <state line="207" column="39" selection-start="6127" selection-end="6127" vertical-scroll-proportion="-24.72" vertical-offset="3036" max-vertical-offset="4068">
               <folding />
             </state>
           </provider>
@@ -94,7 +90,7 @@
       <file leaf-file-name="NetOps.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NetOps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="28" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-17.96" vertical-offset="883" max-vertical-offset="1476">
+            <state line="86" column="28" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-53.28" vertical-offset="0" max-vertical-offset="1476">
               <folding />
             </state>
           </provider>
@@ -333,6 +329,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -358,19 +367,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -515,13 +511,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23919754" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32868218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -540,13 +536,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2187959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43703705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43703705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -572,13 +568,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/NetOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="28" selection-start="2590" selection-end="2590" vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="1692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="33" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -599,10 +599,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="33" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -623,30 +620,21 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="16" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1332">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="16" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0" vertical-offset="2760" max-vertical-offset="3404">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="9" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0" vertical-offset="2530" max-vertical-offset="3634">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,10 +662,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -705,10 +690,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -736,10 +718,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,10 +746,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -798,10 +774,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,10 +802,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,10 +830,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -884,10 +851,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -901,10 +865,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -918,10 +879,7 @@
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,25 +904,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NetOps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="28" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-17.96" vertical-offset="883" max-vertical-offset="1476">
+        <state line="86" column="28" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-53.28" vertical-offset="0" max-vertical-offset="1476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Drawing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="18" selection-start="5838" selection-end="5838" vertical-scroll-proportion="-27.6" vertical-offset="2748" max-vertical-offset="3672">
+        <state line="207" column="39" selection-start="6127" selection-end="6127" vertical-scroll-proportion="-24.72" vertical-offset="3036" max-vertical-offset="4068">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HandwritingRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="36" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.369863" vertical-offset="666" max-vertical-offset="1548">
-          <folding>
-            <element signature="e#1928#2065#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-          </folding>
+        <state line="48" column="20" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.53196347" vertical-offset="559" max-vertical-offset="1494">
+          <folding />
         </state>
       </provider>
     </entry>

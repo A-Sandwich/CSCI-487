@@ -198,5 +198,27 @@ public class Drawing extends JPanel {
         maxX = 0;
         minY = 0;
         maxY = 0;
+        eraseArrays();
     }
+
+    public void eraseArrays(){
+
+        for(int i = 0; i < croppedInput.length; i++){
+            for(int j = 0; j < croppedInput[0].length; j++){
+                croppedInput[i][j] = 0;
+            }
+        }
+
+        for(int i = 0; i < normalized.length; i++){
+            for(int j = 0; j < normalized[0].length; j++){
+                normalized[i][j] = 0;
+            }
+        }
+
+        for(int i = 0; i < input.length; i++){
+            for(int j = 0; j < input[0].length; j++){
+                input[i][j] = 0;
+            }
+        }
+    }//end eraseArrays
 }
