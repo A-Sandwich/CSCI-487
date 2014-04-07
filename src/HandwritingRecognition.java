@@ -14,13 +14,13 @@ public class HandwritingRecognition {
 
     public static final int DRAWINGWIDTH = 100;
     public static final int DRAWINGHEIGHT = 100;
-
+    private static Drawing d;
     public static void main(String[] args) {
         //Matrix m = new Matrix(5,5,10);
         //Pad writingPad = new Pad(25000);
         final NetOps ourNetwork = new NetOps();
 
-        final Drawing d = new Drawing();
+        d = new Drawing();
         d.setPreferredSize(new Dimension(DRAWINGWIDTH, DRAWINGHEIGHT));
 
         JFrame mainWindow = new JFrame("Handwriting Recognition");
@@ -47,6 +47,8 @@ public class HandwritingRecognition {
             public void actionPerformed(ActionEvent e){
                 ourNetwork.createDataset(d.getNormalizedArray(), addText.getText().charAt(0));
                 d.resetDrawing();
+                d.updateUI();
+                addText.setText("");
             }
         });
         easternSeaboard.add(add);
@@ -57,6 +59,7 @@ public class HandwritingRecognition {
                 ourNetwork.learn();
             }
         });
+
         easternSeaboard.add(learn);
 
         JButton test = new JButton("Test");

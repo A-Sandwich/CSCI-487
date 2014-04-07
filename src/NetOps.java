@@ -28,14 +28,12 @@ public class NetOps {
     }
 
     public DataSet createDataset(int[][] rawData, char target){
-        System.out.println("creating dataset");
         double[] data1D = new double[rawData[0].length*rawData.length];
         int counter = 0;
 
         data1D = convertArrays(rawData);
 
         trainingSet.addRow(new DataSetRow(data1D, new double[]{(double)target}));
-        System.out.println("done");
         return trainingSet;
     }//end createDataSet
 
@@ -84,7 +82,7 @@ public class NetOps {
             System.out.print("Input: " + Arrays.toString(dataRow.getInput()) );
             System.out.println(" Output: " + Arrays.toString(networkOutput) );
 
-        }
+        }//end for
 
-    }
+    }//end testNeuralNetwork
 }

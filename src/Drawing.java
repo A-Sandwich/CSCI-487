@@ -192,7 +192,8 @@ public class Drawing extends JPanel {
     }
 
     public void resetDrawing(){
-        
+        this.graphics = null;
+        __Image();
         minX = 0;
         maxX = 0;
         minY = 0;
