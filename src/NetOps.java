@@ -23,17 +23,15 @@ public class NetOps {
 
         trainingSet = new DataSet(35,1);
 
-        neuralNetwork = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 35, 2, 2);
+        neuralNetwork = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 35, 10, 1);
         //neurons = new Neuron[rawData.length*rawData[0].length];
     }
 
     public DataSet createDataset(int[][] rawData, char target){
-        double[] data1D = new double[rawData[0].length*rawData.length];
-        int counter = 0;
+        double[] data1D;
 
         data1D = convertArrays(rawData);
-
-        trainingSet.addRow(new DataSetRow(data1D, new double[]{(double)target}));
+        trainingSet.addRow(new DataSetRow(data1D, new double[]{((double)target)/100}));
         return trainingSet;
     }//end createDataSet
 
