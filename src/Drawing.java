@@ -168,16 +168,22 @@ public class Drawing extends JPanel {
     }
 
     void imageToArray(){
-        croppedInput = new int[(maxY-minY)+1][(maxX-minX)+1];
+        /*croppedInput = new int[(maxY-minY)+1][(maxX-minX)+1];
         for(int j=minY;j<=maxY;j++){
             for(int i = minX;i<=maxX;i++){
                 croppedInput[j-minY][i-minX] = input[j][i];
             }
+        }*/
+        croppedInput = new int[(maxY - minY) + 5][(maxX - minX) + 5];
+        for(int j = (minY - 2); j <= (maxY + 2); j++) {
+            for(int i = (minX-2); i <= (maxX + 2); i++) {
+                croppedInput[j-(minY-2)][i-(minX -2)] = input[i][j];
+            }
         }
 
         
-        for(int j=0; j<(maxY-minY);j++){
-            for(int i=0;i<(maxX-minX);i++){
+        for(int j=0; j<croppedInput.length;j++){
+            for(int i=0;i<croppedInput[0].length;i++){
                 System.out.print(croppedInput[j][i]);
             }
             System.out.println();

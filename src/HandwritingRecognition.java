@@ -45,7 +45,7 @@ public class HandwritingRecognition {
         JButton add = new JButton("Add");
         add.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                if(addText.getText() != "")
+                if(!addText.getText().equals(""))
                     ourNetwork.createDataset(d.getNormalizedArray(), addText.getText().charAt(0));
                 d.resetDrawing();
                 d.updateUI();
@@ -67,6 +67,9 @@ public class HandwritingRecognition {
         test.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ourNetwork.test(d.getNormalizedArray(), addText.getText().charAt(0));
+                d.resetDrawing();
+                d.updateUI();
+                addText.setText("");
             }
         });
         easternSeaboard.add(test);

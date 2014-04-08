@@ -16,14 +16,14 @@ import org.neuroph.util.TransferFunctionType;
  */
 public class NetOps {
     private MultiLayerPerceptron neuralNetwork;
-    private Neuron[] neurons;
+    //private Neuron[] neurons;
     private DataSet trainingSet;
     public NetOps(){
         //CONSTRUCTOR
 
         trainingSet = new DataSet(35,1);
 
-        neuralNetwork = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 35, 10, 1);
+        neuralNetwork = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 35, 100, 1);
         //neurons = new Neuron[rawData.length*rawData[0].length];
     }
 
@@ -72,7 +72,7 @@ public class NetOps {
 
     public static void testNeuralNetwork(NeuralNetwork nnet, DataSet tset) {
 
-        for(DataSetRow dataRow : tset.getRows()) {
+            for(DataSetRow dataRow : tset.getRows()) {
 
             nnet.setInput(dataRow.getInput());
             nnet.calculate();
