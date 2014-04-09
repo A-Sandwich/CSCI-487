@@ -12,8 +12,8 @@ import java.awt.event.ActionListener;
  */
 public class HandwritingRecognition {
 
-    public static final int DRAWINGWIDTH = 100;
-    public static final int DRAWINGHEIGHT = 100;
+    public static final int DRAWINGWIDTH = 300;
+    public static final int DRAWINGHEIGHT = 300;
     private static Drawing d;
     public static void main(String[] args) {
         //Matrix m = new Matrix(5,5,10);
