@@ -42,6 +42,8 @@ public class Drawing extends JPanel {
     private int[][] input;
     private int[][] croppedInput;
     private int[][] normalized;
+    public static int HEIGHT = 14;
+    public static int WIDTH = 10;
 
     private int mouseWiggle;
 
@@ -55,9 +57,9 @@ public class Drawing extends JPanel {
             }
         }
 
-        normalized = new int[7][5];
-        for(int i=0; i< 7; i++){
-            for(int j=0;j<5;j++){
+        normalized = new int[HEIGHT][WIDTH];
+        for(int i=0; i< HEIGHT; i++){
+            for(int j=0;j<WIDTH;j++){
                 normalized[i][j] = 0;
             }
         }
@@ -139,10 +141,18 @@ public class Drawing extends JPanel {
     }
 
     void generateNormalization(){
-        int pixelSizeWidth = (maxX-minX)/5;
-        int pixelSizeHeight = (maxY-minY)/7;
+        int pixelSizeWidth = (maxX-minX)/WIDTH;
+        int pixelSizeHeight = (maxY-minY)/HEIGHT;
 
-        normalized = new int[7][5];
+        System.out.println((maxX-minX)+"/"+WIDTH);
+        System.out.println((maxY-minY)+"/"+HEIGHT);
+        if((maxX-minX)%WIDTH != 0)
+            pixelSizeWidth++;
+
+        if((maxY-minY)%HEIGHT != 0)
+            pixelSizeHeight++;
+
+        normalized = new int[HEIGHT][WIDTH];
         for(int i = 0; i < (maxY - minY)-pixelSizeHeight; i += pixelSizeHeight) {
             for(int j = 0; j < (maxX - minX)-pixelSizeWidth; j += pixelSizeWidth) {
                 for(int k = i; k < i  + pixelSizeHeight; k++) {
@@ -156,8 +166,8 @@ public class Drawing extends JPanel {
             }
         }
 
-        for(int i =0;i<7;i++){
-            for(int j=0; j<5; j++){
+        for(int i =0;i<HEIGHT;i++){
+            for(int j=0; j<WIDTH; j++){
                 System.out.print(normalized[i][j] + " ");
 
             }

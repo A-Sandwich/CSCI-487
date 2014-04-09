@@ -21,9 +21,9 @@ public class NetOps {
     public NetOps(){
         //CONSTRUCTOR
 
-        trainingSet = new DataSet(35,26);
+        trainingSet = new DataSet((Drawing.HEIGHT*Drawing.WIDTH),26);
 
-        neuralNetwork = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 35, 100, 26);
+        neuralNetwork = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, (Drawing.HEIGHT*Drawing.WIDTH), 100, 26);
         //neurons = new Neuron[rawData.length*rawData[0].length];
     }
 
@@ -45,7 +45,7 @@ public class NetOps {
         double[] data1d;
         double[] target_array = getTargetArray(target);
         data1d = convertArrays(rawData);
-        DataSet test = new DataSet(35, 26);
+        DataSet test = new DataSet((Drawing.HEIGHT*Drawing.WIDTH), 26);
         test.addRow(new DataSetRow(data1d, target_array));
         testNeuralNetwork(neuralNetwork, test);
     }
